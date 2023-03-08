@@ -1,0 +1,44 @@
+[
+  {
+    "postNo": 1,
+    "babCode": "0001",
+    "no_name": "뜸들이다",
+    "menu": "카레"
+  },
+  {
+    "postNo": 2,
+    "babCode": "0002",
+    "no_name": "옥자회관",
+    "menu": "돈카츠"
+  },
+  {
+    "postNo": 3,
+    "babCode": "0003",
+    "no_name": "진돈",
+    "menu": "돈카츠, 일식, 카츠동, 사케동"
+  },
+  {
+    "postNo": 4,
+    "babCode": "0004",
+    "no_name": "오봉집",
+    "menu": "낙지, 제육"
+  },
+  {
+    "postNo": 5,
+    "babCode": "0005",
+    "no_name": "새싹카페",
+    "menu": "샐러드"
+  },
+  {
+    "postNo": 6,
+    "babCode": "0006",
+    "no_name": "꼬닭",
+    "menu": "닭도리탕"
+  },
+  {
+    "postNo": 7,
+    "babCode": "0007",
+    "no_name": "부대찌개",
+    "menu": "부대찌개"
+  }
+]

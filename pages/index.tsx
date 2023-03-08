@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout from "@/components/layout";
-import StoreList from "@/components/Store";
+import StoreList from "@/components/store";
 import Header from "@/components/header";
 
 export default function Home() {

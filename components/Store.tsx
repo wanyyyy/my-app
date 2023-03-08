@@ -1,20 +1,32 @@
 import axios from "../api/axios";
 import { useEffect, useState } from "react";
 import { StoreType } from "../pages/api/StoreType";
+import babdata from "../pages/api/babdata.json";
+import reviewdata from "../pages/api/review.json";
+import { ReviewType } from "@/pages/api/ReviewType";
 
 const StoreList = () => {
-  // api 통신
-  const [store, setStore] = useState<StoreType[]>();
+  // json 파일 이용시
+  const [store, setStore] = useState<StoreType[]>(babdata);
+  const [review, setReview] = useState<ReviewType[]>(reviewdata);
 
-  const axiosTest = async () => {
-    const res = await axios.get("/babzip");
-    // console.log(res);
-    setStore(res.data);
+  const GetStore = (i: number) => {
+    sessionStorage.setItem("store_code", JSON.stringify(store[i].babCode));
+    console.log("store_code");
   };
+  // api 통신
 
-  useEffect(() => {
-    axiosTest();
-  }, []);
+  // const [store, setStore] = useState<StoreType[]>();
+
+  // const axiosTest = async () => {
+  //   const res = await axios.get("/babzip");
+  //   // console.log(res);
+  //   setStore(res.data);
+  // };
+
+  // useEffect(() => {
+  //   axiosTest();
+  // }, []);
 
   // 검색
   const [searchMenu, setSearchMenu] = useState("");
@@ -53,13 +65,18 @@ const StoreList = () => {
                   return val;
                 }
               })
-              .map((item) => {
+              .map((item, i) => {
                 return (
-                  <div className="babzip">
+                  <div
+                    className="babzip"
+                    onClick={() => {
+                      GetStore(i);
+                    }}
+                  >
                     <div className="title">{item.no_name}</div>
                     <p>{item.menu}</p>
                     <img className="star" style={{ marginLeft: "80%" }} />
-                    <span>4.3</span>
+                    <span>{}</span>
                   </div>
                 );
               })}

@@ -1,0 +1,51 @@
+[
+  {
+    "reviewNo": 1,
+    "username": "김",
+    "store_code": "0003",
+    "review": "맛잇다",
+    "star": 3
+  },
+  {
+    "reviewNo": 2,
+    "username": "이",
+    "store_code": "0007",
+    "review": "굿",
+    "star": 5
+  },
+  {
+    "reviewNo": 3,
+    "username": "김이",
+    "store_code": "0003",
+    "review": "맨",
+    "star": 2
+  },
+  {
+    "reviewNo": 4,
+    "username": "박",
+    "store_code": "0002",
+    "review": "맛읻다",
+    "star": 5
+  },
+  {
+    "reviewNo": 5,
+    "username": "최",
+    "store_code": "0001",
+    "review": "굿굿",
+    "star": 5
+  },
+  {
+    "reviewNo": 6,
+    "username": "임이",
+    "store_code": "0007",
+    "review": "아",
+    "star": 2
+  },
+  {
+    "reviewNo": 7,
+    "username": "이이이",
+    "store_code": "0001",
+    "review": "흠",
+    "star": 1
+  }
+]
